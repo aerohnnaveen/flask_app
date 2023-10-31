@@ -4,8 +4,7 @@ from wtforms import StringField,SubmitField,RadioField,TextAreaField
 from wtforms.fields import DateField, EmailField, TelField
 from wtforms.validators import InputRequired
 
-application = Flask(__name__)
-app = application
+application = app = Flask(__name__)
 app.config['SECRET_KEY']='some_random_secret'
 
 class SignUpForm(FlaskForm):
@@ -34,4 +33,4 @@ def thankyou():
     return render_template('thankyou.html')
 
 if __name__ == '__main__':
-    app.run('localhost',8080,debug=True)
+    application.run('localhost',8080,debug=True)
