@@ -1,7 +1,7 @@
 from flask import Flask,render_template,redirect,url_for,session
 from flask_wtf import FlaskForm
 from wtforms import StringField,SubmitField,RadioField,TextAreaField
-from wtforms.fields.html5 import EmailField
+from wtforms.fields import DateField, EmailField, TelField
 from wtforms.validators import InputRequired
 
 application = Flask(__name__)
