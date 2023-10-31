@@ -34,4 +34,4 @@ def thankyou():
     return render_template('thankyou.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run('localhost',8080,debug=True)
